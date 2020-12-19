@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Delaney - Web Developer</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7e0cb6b696.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header>
+		<nav id="navbar">
+			<ul class="nav nav-pills">
+			  <li class="nav-item">
+				<a class="nav-link" href="#about-link">About</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#project-link">Projects</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#contact-link">Contact</a>
+			  </li>
+	</header>
+
+	<section class="landing" id="landing-link">
+		<div class="background-image"><img src="/assets/bokeh.jpg"></div>
+		<h1>Joshua Delaney</h1>
+		<h3>Web Developer (and coffee drinker)</h3>
+	</section>
+
+	<section class="about-me" id="about-link">
+		<h3 class="title">A little bit about me</h3>
+		<p>Hello! My name is Joshua Delaney, and I'm currently building my skills as a web developer through Eleven Fifty Academy. I've worn many hats throughout my life, but my passion for technology has remained consistent. I'm hoping to utilize that passion and combine it with my problem solving skills to pursue a long term career in this fascinating field. I'm always eager to take on new challenges and push myself to learn new concepts and better myself as a developer.</p>
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<i class="fab fa-html5"></i>
+				<h4>HTML5</h4>
+				<p>HTML is where I started gaining an affinity for web development. I took one class during my education at Harrison College and it was all uphill from there.</p>
+			</li>
+			<li>
+				<i class="fab fa-css3-alt" class='button'></i>
+				<h4>CSS</h4>
+				<p>My journey continued at Eleven Fifty Academy, where I would gain a deeper understanding of CSS and the many ways you can utilize it to make your projects stick out.</p>
+			</li>
+			<li>
+				<i class="fab fa-js-square"></i>
+				<h4>JavaScript</h4>
+				<p>Although I am in the early days of utilizing JavaScript, I am eager to deepen my knowledge and appreciation for its limitless applications and continue honing my skillset.</p>
+			</li>
+		</div>
+	</section>
+
+	<section class="projects" id="project-link">
+		<h3 class="title">Portfolio</h3>
+		<hr>
+		<div class="card-projects">
+		<div class="card" id="cardOne" style="width: 18rem;">
+			<img src="/assets/cssBee.jpg" class="card-img-top" alt="CSS Bee Project Thumbnail">
+			<div class="card-body">
+			  <h5 class="card-title">CSS Creature Project</h5>
+			  <p class="card-text">A quick little honeybee that was crafted with HTML and CSS. My first proper project at Eleven Fifty Academy.</p>
+			  <a href="https://codepen.io/joshuadelaney89/pen/ZEOmxRr" target="_blank" class="btn btn-primary">View Project</a>
+			</div>
+		  </div>
+
+		  <div class="card" id="cardTwo" style="width: 18rem;">
+			<img src="/assets/staticLayout.jpg" class="card-img-top" alt="Static Layout Project Thumbnail">
+			<div class="card-body">
+			  <h5 class="card-title">Static Layout Project</h5>
+			  <p class="card-text">A project where I recreated the layout of a website's home page. I used Eleven Fifty Academy's website.</p>
+			  <a href="https://joshuadelaney89.github.io/staticLayout/" target="_blank" class="btn btn-primary">View Project</a>
+			</div>
+		  </div>
+
+		  <div class="card" id="cardThree" style="width: 18rem;">
+			<img src="/assets/musicgenre.jpg" class="card-img-top" alt="API Challenge Thumbnail">
+			<div class="card-body">
+			  <h5 class="card-title">API Challenge</h5>
+			  <p class="card-text">A music genre randomizer that pulls from an API and displays it to HTML.</p>
+			  <a href="https://music-genre-randomizer.web.app/" target="_blank" class="btn btn-primary">View Project</a>
+			</div>
+		  </div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact-link">
+		<h3 class="title">Contact Me</h3>	
+		<p>Feel free to reach out to me using the form below, and thank you for taking the time to check out my page!</p>
+		<hr>
+
+		<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xzbkjngb" method="post">
+			<fieldset id="fs-frm-inputs">
+			  <label for="full-name">Full Name</label>
+			  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+			  <label for="email-address">Email Address</label>
+			  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+			  <label for="message">Message</label>
+			  <textarea rows="5" name="message" id="message" placeholder="Type your message here" required=""></textarea>
+			  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+			</fieldset>
+			<input type="submit" value="Submit">
+		  </form><style>/* reset */
+		  #fs-frm input,
+		  #fs-frm select,
+		  #fs-frm textarea,
+		  #fs-frm fieldset,
+		  #fs-frm optgroup,
+		  #fs-frm label,
+		  #fs-frm #card-element:disabled {
+			font-family: inherit;
+			font-size: 100%;
+			color: inherit;
+			border: none;
+			border-radius: 0;
+			display: block;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+		  }
+		  #fs-frm label,
+		  #fs-frm legend,
+		  #fs-frm ::placeholder {
+			font-size: .825rem;
+			margin-bottom: .5rem;
+			padding-top: .2rem;
+			display: flex;
+			align-items: baseline;
+		  }
+		  
+		  /* border, padding, margin, width */
+		  #fs-frm input,
+		  #fs-frm select,
+		  #fs-frm textarea,
+		  #fs-frm #card-element {
+			border: 1px solid rgba(0,0,0,0.2);
+			background-color: rgba(255,255,255,0.9);
+			padding: .75em 1rem;
+			margin-bottom: 1.5rem;
+		  }
+		  #fs-frm input:focus,
+		  #fs-frm select:focus,
+		  #fs-frm textarea:focus {
+			background-color: white;
+			outline-style: solid;
+			outline-width: thin;
+			outline-color: gray;
+			outline-offset: -1px;
+		  }
+		  #fs-frm [type="text"],
+		  #fs-frm [type="email"] {
+			width: 100%;
+		  }
+		  #fs-frm [type="button"],
+		  #fs-frm [type="submit"],
+		  #fs-frm [type="reset"] {
+			width: auto;
+			cursor: pointer;
+			-webkit-appearance: button;
+			-moz-appearance: button;
+			appearance: button;
+		  }
+		  #fs-frm [type="button"]:focus,
+		  #fs-frm [type="submit"]:focus,
+		  #fs-frm [type="reset"]:focus {
+			outline: none;
+		  }
+		  #fs-frm [type="submit"],
+		  #fs-frm [type="reset"] {
+			margin-bottom: 0;
+		  }
+		  #fs-frm select {
+			text-transform: none;
+		  }
+		  
+		  #fs-frm [type="checkbox"] {
+			-webkit-appearance: checkbox;
+			-moz-appearance: checkbox;
+			appearance: checkbox;
+			display: inline-block;
+			width: auto;
+			margin: 0 .5em 0 0 !important;
+		  }
+		  
+		  #fs-frm [type="radio"] {
+			-webkit-appearance: radio;
+			-moz-appearance: radio;
+			appearance: radio;
+		  }
+		  
+		  /* address, locale */
+		  #fs-frm fieldset.locale input[name="city"],
+		  #fs-frm fieldset.locale select[name="state"],
+		  #fs-frm fieldset.locale input[name="postal-code"] {
+			display: inline;
+		  }
+		  #fs-frm fieldset.locale input[name="city"] {
+			width: 52%;
+		  }
+		  #fs-frm fieldset.locale select[name="state"],
+		  #fs-frm fieldset.locale input[name="postal-code"] {
+			width: 20%;
+		  }
+		  #fs-frm fieldset.locale input[name="city"],
+		  #fs-frm fieldset.locale select[name="state"] {
+			margin-right: 3%;
+		  }
+		  </style>
+	</section>
+
+	<footer>
+		<ul>
+			<li><a href="https://github.com/joshuadelaney89" target="_blank"><i class="fab fa-github"></i></a></li>
+			<li><a href="https://codepen.io/joshuadelaney89" target="_blank"><i class="fab fa-codepen"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/joshuadelaney89/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+			<li><a href="https://jarsh.zone" target="_blank"><i class="fab fa-wordpress-simple"></i></a></li>
+		</ul>
+	</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>
